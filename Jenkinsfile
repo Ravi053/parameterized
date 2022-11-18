@@ -58,4 +58,5 @@ pipeline {
                 echo "This is server1"
             }
             }
-          
+          }
+       }
