@@ -46,4 +46,16 @@ pipeline {
         }
     }
 }
-       
+       stage('UAT') {
+          parallel {
+            stage('tested by customer1') {
+            steps {
+                echo "This is server1"
+            }
+            }
+            stage('tested by customer2') {
+            steps {
+                echo "This is server1"
+            }
+            }
+          
