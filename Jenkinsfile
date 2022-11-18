@@ -24,22 +24,22 @@ pipeline {
           parallel {
             stage('Server1') {
             steps {
-                echo "This is Deploy stage"
+                echo "This is server1"
             }
         }
             stage('Server2') {
             steps {
-                echo "This is Deploy stage"
+                echo "This is server2"
             }
         }
             stage('Server3') {
             steps {
-                echo "This is Deploy stage"
+                echo "This is server3"
            }
         }
             stage('Server4') {
             steps {
-                echo "This is Deploy stage"
+                echo "This is server4"
      }
         }
     }
