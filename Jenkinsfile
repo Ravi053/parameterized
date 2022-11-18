@@ -20,10 +20,27 @@ pipeline {
         }
     }
 }
-        stage('Deploy') { 
+        stage('Deploy') {
+          parallel {
+            stage('Server1') {
             steps {
                 echo "This is Deploy stage"
             }
+        }
+            stage('Server2') {
+            steps {
+                echo "This is Deploy stage"
+            }
+        }
+            stage('Server3') {
+            steps {
+                echo "This is Deploy stage"
+           }
+        }
+            stage('Server4') {
+            steps {
+                echo "This is Deploy stage"
+     }
         }
     }
 }
